@@ -108,7 +108,7 @@
 
 $(window).on('load',function(){
   // ここから文字を<span></span>で囲む記述
-  for (var i = 0; i <= 10; i++){
+  for (var i = 0; i <= 11; i++){
     var setElm = $('.txt'+i),className = 't'+i+'-';
     setElm.children().addBack().contents().each(function(){
       var elmThis = $(this);
@@ -138,7 +138,7 @@ $(window).on('load',function(){
 $(function(){
   setTimeout(function(){
       $('.txt').animate({'opacity':0},200);
-  },17000);
+  },17500);
 });
 
 
@@ -146,13 +146,15 @@ $(function(){
 $(function(){
   setTimeout(function(){
       $('.image').animate({'opacity':1},150);
-  },17500);
+  },18500);
 });
 
-// 背景カラーチェンジ & ロゴフェードアウト
+// 背景カラーチェンジ & ロゴフェードアウト & 顔アイコン登場
 $(function(){
   setTimeout(function(){
-      $('body').animate({'backgroundColor':'#82CBCA'},150);
-      $('.image').animate({'opacity':0},150);
-  },18500);
+      $('body').animate({'backgroundColor':'#82CBCA'},200);
+      $('.image').animate({'opacity':0},200);
+      $('.txt-wrap').css({'display': 'none'});
+      $('.image-wrap').css({'display': 'flex'});
+  },19500);
 });

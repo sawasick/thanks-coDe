@@ -7,11 +7,16 @@
     --white: #E1EFFF;
 
 }
+html, body{
+    margin: 0;
+}
+*{
+    box-sizing:border-box;
+}
 body{
     background-color: #2D2B55;
     width: 100vw;
     height: 100vh;
-    margin: 0;
 }
 
 .txt{
@@ -31,13 +36,7 @@ body{
     transform: translate(-50%, -50%);
     opacity: 0;
 }
-@media screen and (min-width: 481px) {
-    .image{
-        width: 600px;
-        height: 600px;
-    }
 
-}
 .image img{
     width: 100%;
 }
@@ -172,3 +171,49 @@ body{
     color: var(--green);
 }
 
+
+.txt11{
+    margin-top: 3%;
+    font-size: 130%;
+    color: var(--white);
+}
+
+
+.member-wrap{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 8vh;
+}
+.image-wrap{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+    flex-direction: column;
+}
+.image-wrap img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.image-wrap p{
+    font-size: 180%;
+    color: #FFFFFF;
+}
+
+/* メディアクエリ  */
+@media screen and (min-width: 481px) {
+    /* SP以外 */
+    .image{
+        width: 600px;
+        height: 600px;
+    }
+    .image-wrap{
+        width: 40%;
+    }
+
+}
