@@ -164,3 +164,11 @@ $(function () {
 		$(".image-wrap").css({ display: "flex" });
 	}, 19500);
 });
+
+// アイコン背景カバー非表示
+// $(function () {
+// 	setTimeout(function () {
+// 		$(".cover1").css({ display: "none" });
+// 		$(".cover2").css({ display: "none" });
+// 	}, 21000);
+// });
