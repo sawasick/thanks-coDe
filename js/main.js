@@ -164,3 +164,15 @@ $(function () {
 		$(".image-wrap").css({ display: "flex" });
 	}, 19500);
 });
+
+//モーダル
+$(function () {
+	$(".modalBtn-open").on("click", function () {
+		$(".modal-wrap").fadeIn();
+		return false;
+	});
+	$(".modalBtn-close").on("click", function () {
+		$(".modal-wrap").fadeOut();
+		return false;
+	});
+});
