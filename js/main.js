@@ -42,14 +42,12 @@ $(function () {
 		$(".txt").animate({ opacity: 0 }, 200);
 	}, 17500);
 });
-
 // ロゴフェードイン
 $(function () {
 	setTimeout(function () {
 		$(".image").animate({ opacity: 1 }, 150);
 	}, 18000);
 });
-
 // 背景カラーチェンジ & ロゴフェードアウト & 顔アイコン登場
 $(function () {
 	setTimeout(function () {
